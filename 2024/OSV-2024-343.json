@@ -1,0 +1,44 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2024-343",
+	"modified": "2024-09-04T14:16:51.394837Z",
+	"published": "2024-04-30T00:02:38.268026Z",
+	"summary": "Heap-buffer-overflow in pcpp::BgpUpdateMessageLayer::setPathAttributes",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67971\n\n```\nCrash type: Heap-buffer-overflow READ 2\nCrash state:\npcpp::BgpUpdateMessageLayer::setPathAttributes\npcpp::BgpUpdateMessageLayer::clearPathAttributes\nreadParsedPacket\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "pcapplusplus",
+				"purl": "pkg:generic/pcapplusplus"
+			},
+			"ranges": [
+				{
+					"type": "GIT",
+					"repo": "https://github.com/seladb/PcapPlusPlus",
+					"events": [
+						{
+							"introduced": "5f1895a7b496fa78a2927bd5fe610ab619a3f49b"
+						}
+					]
+				}
+			],
+			"versions": [
+				"v24.09"
+			],
+			"ecosystem_specific": {
+				"severity": "MEDIUM"
+			},
+			"database_specific": {
+				"introduced_range": "762c7fd488d0bc6ce81d105fcb4f07ba2c9e6bc4:f112d0adcae6b75531894b3c1cb29f97bfdad171",
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/pcapplusplus/OSV-2024-343.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67971"
+		}
+	]
+}

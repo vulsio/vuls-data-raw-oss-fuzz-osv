@@ -1,0 +1,48 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2024-592",
+	"modified": "2024-07-16T14:09:41.299847Z",
+	"published": "2024-06-27T00:03:46.520119Z",
+	"summary": "UNKNOWN READ in spvtools::disassemble::InstructionDisassembler::EmitInstruction",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69804\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nspvtools::disassemble::InstructionDisassembler::EmitInstruction\nspvtools::DisassembleInstruction\nParser::parseInstruction\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "spirv-tools",
+				"purl": "pkg:generic/spirv-tools"
+			},
+			"ranges": [
+				{
+					"type": "GIT",
+					"repo": "https://github.com/KhronosGroup/SPIRV-Tools.git",
+					"events": [
+						{
+							"introduced": "c3178da8eac9bc7d1788e95f8d555918ba483c23"
+						},
+						{
+							"fixed": "64d37e2811a794f614bc569338afa47dbdfefa0e"
+						}
+					]
+				}
+			],
+			"versions": [
+				"v2024.3",
+				"v2024.3.rc1"
+			],
+			"ecosystem_specific": {
+				"severity": "MEDIUM"
+			},
+			"database_specific": {
+				"fixed_range": "b9d8114695de81ae3ea6f93e391156a2f5c13f4c:64d37e2811a794f614bc569338afa47dbdfefa0e",
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/spirv-tools/OSV-2024-592.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69804"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2022-207",
+	"modified": "2022-03-02T00:00:25.721858Z",
+	"published": "2022-03-02T00:00:25.721615Z",
+	"summary": "Uncaught exception in com.github.javaparser.GeneratedJavaParser.Expression",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45131\n\nCrash type: Uncaught exception\nCrash state:\ncom.github.javaparser.GeneratedJavaParser.Expression\njava.base/java.nio.CharBuffer.wrap\njava.base/sun.nio.cs.StreamDecoder.implRead\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "javaparser",
+				"purl": "pkg:generic/javaparser"
+			},
+			"ecosystem_specific": {
+				"severity": "LOW"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/javaparser/OSV-2022-207.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45131"
+		}
+	]
+}

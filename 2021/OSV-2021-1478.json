@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2021-1478",
+	"modified": "2021-10-23T00:01:08.348Z",
+	"published": "2021-10-23T00:01:08.347770Z",
+	"summary": "Uncaught exception in com.alibaba.fastjson.parser.DefaultJSONParser.parseObject",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40208\n\nCrash type: Uncaught exception\nCrash state:\ncom.alibaba.fastjson.parser.DefaultJSONParser.parseObject\njava.base/java.util.HashMap.tableSizeFor\njava.base/java.util.HashMap.<init>\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "fastjson2",
+				"purl": "pkg:generic/fastjson2"
+			},
+			"ecosystem_specific": {
+				"severity": "LOW"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/fastjson2/OSV-2021-1478.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40208"
+		}
+	]
+}

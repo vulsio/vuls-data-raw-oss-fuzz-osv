@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2022-1094",
+	"modified": "2022-10-26T00:00:07.565724Z",
+	"published": "2022-10-26T00:00:07.565447Z",
+	"summary": "Security exception in com.google.common.hash.Hashing$ConcatenatedHashFunction.makeHash",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52693\n\n```\nCrash type: Security exception\nCrash state:\ncom.google.common.hash.Hashing$ConcatenatedHashFunction.makeHash\ncom.google.common.hash.AbstractCompositeHashFunction$1.hash\nHashingFuzzer.testHash\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "guava",
+				"purl": "pkg:generic/guava"
+			},
+			"ecosystem_specific": {
+				"severity": "LOW"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/guava/OSV-2022-1094.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52693"
+		}
+	]
+}

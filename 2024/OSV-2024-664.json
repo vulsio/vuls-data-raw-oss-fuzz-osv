@@ -1,0 +1,40 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2024-664",
+	"modified": "2024-07-18T00:13:55.576576Z",
+	"published": "2024-07-18T00:13:55.576218Z",
+	"summary": "Heap-buffer-overflow in gf_dash_group_get_template",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342\n\n```\nCrash type: Heap-buffer-overflow WRITE 1\nCrash state:\ngf_dash_group_get_template\ngf_dash_resolve_url\ngf_dash_download_init_segment\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "gpac",
+				"purl": "pkg:generic/gpac"
+			},
+			"ranges": [
+				{
+					"type": "GIT",
+					"repo": "https://github.com/gpac/gpac",
+					"events": [
+						{
+							"introduced": "7323c74ff523fa2d5c4db793d5dfbc611ae505c4"
+						}
+					]
+				}
+			],
+			"ecosystem_specific": {
+				"severity": "HIGH"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/gpac/OSV-2024-664.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2022-780",
+	"modified": "2022-08-26T00:00:18.012566Z",
+	"published": "2022-08-26T00:00:18.012288Z",
+	"summary": "Index-out-of-bounds in is_same_net6",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50599\n\n```\nCrash type: Index-out-of-bounds\nCrash state:\nis_same_net6\ndhcp6_maybe_relay\ndhcp6_maybe_relay\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "dnsmasq",
+				"purl": "pkg:generic/dnsmasq"
+			},
+			"ecosystem_specific": {
+				"severity": "MEDIUM"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/dnsmasq/OSV-2022-780.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50599"
+		}
+	]
+}

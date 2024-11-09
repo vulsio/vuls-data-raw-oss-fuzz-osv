@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2024-222",
+	"modified": "2024-03-31T00:06:34.773031Z",
+	"published": "2024-03-31T00:06:34.772501Z",
+	"summary": "Security exception in co.nstant.in.cbor.CborDecoder.decodeNext",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67637\n\n```\nCrash type: Security exception\nCrash state:\nco.nstant.in.cbor.CborDecoder.decodeNext\njava.base/jdk.internal.misc.Unsafe.putByte\njdk.unsupported/sun.misc.Unsafe.putByte\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "cbor-java",
+				"purl": "pkg:generic/cbor-java"
+			},
+			"ecosystem_specific": {
+				"severity": "LOW"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/cbor-java/OSV-2024-222.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67637"
+		}
+	]
+}

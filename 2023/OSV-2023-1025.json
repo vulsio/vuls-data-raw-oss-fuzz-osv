@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2023-1025",
+	"modified": "2023-10-17T13:03:42.002390Z",
+	"published": "2023-10-17T13:03:42.001937Z",
+	"summary": "Heap-buffer-overflow in ucl_hash_destroy",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63299\n\n```\nCrash type: Heap-buffer-overflow READ 8\nCrash state:\nucl_hash_destroy\nucl_object_dtor_unref_single\nucl_object_dtor_unref\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "libucl",
+				"purl": "pkg:generic/libucl"
+			},
+			"ecosystem_specific": {
+				"severity": "MEDIUM"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/libucl/OSV-2023-1025.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63299"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2022-914",
+	"modified": "2022-09-19T00:02:14.136784Z",
+	"published": "2022-09-19T00:02:14.136533Z",
+	"summary": "Security exception in com.github.javaparser.ast.validator.TreeVisitorValidator.accept",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51492\n\n```\nCrash type: Security exception\nCrash state:\ncom.github.javaparser.ast.validator.TreeVisitorValidator.accept\ncom.github.javaparser.metamodel.BaseNodeMetaModel.getDeclaredPropertyMetaModels\ncom.github.javaparser.metamodel.BaseNodeMetaModel.getAllPropertyMetaModels\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "javaparser",
+				"purl": "pkg:generic/javaparser"
+			},
+			"ecosystem_specific": {
+				"severity": "LOW"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/javaparser/OSV-2022-914.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51492"
+		}
+	]
+}

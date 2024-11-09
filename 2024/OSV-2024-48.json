@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2024-48",
+	"modified": "2024-01-28T00:12:00.908753Z",
+	"published": "2024-01-28T00:12:00.908132Z",
+	"summary": "Security exception in java.base/java.util.Arrays.copyOf",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66178\n\n```\nCrash type: Security exception\nCrash state:\njava.base/java.util.Arrays.copyOf\njava.base/java.util.Arrays.copyOf\njava.base/java.util.ArrayList.grow\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "apache-poi",
+				"purl": "pkg:generic/apache-poi"
+			},
+			"ecosystem_specific": {
+				"severity": "LOW"
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/apache-poi/OSV-2024-48.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66178"
+		}
+	]
+}

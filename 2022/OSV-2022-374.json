@@ -1,0 +1,29 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2022-374",
+	"modified": "2022-04-26T00:00:27.095982Z",
+	"published": "2022-04-26T00:00:27.095761Z",
+	"summary": "Stack-use-after-scope in RefCopyBytes",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47001\n\n```\nCrash type: Stack-use-after-scope READ {*}\nCrash state:\nRefCopyBytes\ndng_stream::Put\ntag_data_ptr::Put\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "dng_sdk",
+				"purl": "pkg:generic/dng_sdk"
+			},
+			"ecosystem_specific": {
+				"severity": null
+			},
+			"database_specific": {
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/dng_sdk/OSV-2022-374.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47001"
+		}
+	]
+}
