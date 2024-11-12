@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2020-2308",
-	"modified": "2024-11-07T14:05:04.591771Z",
+	"modified": "2024-11-12T14:05:11.304396Z",
 	"published": "2021-02-10T00:00:17.357392Z",
 	"summary": "Heap-buffer-overflow in derive_collocated_motion_vectors",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568\n\n```\nCrash type: Heap-buffer-overflow READ 1\nCrash state:\nderive_collocated_motion_vectors\nderive_temporal_luma_vector_prediction\nfill_luma_motion_vector_predictors\n```\n",
@@ -53,7 +53,8 @@
 				"v1.18.2",
 				"v1.19.0",
 				"v1.19.1",
-				"v1.19.2"
+				"v1.19.2",
+				"v1.19.3"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
