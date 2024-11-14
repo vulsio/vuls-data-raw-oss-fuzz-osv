@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-451",
-	"modified": "2024-11-13T14:26:53.868062Z",
+	"modified": "2024-11-14T14:20:39.484063Z",
 	"published": "2024-05-08T00:14:48.544622Z",
 	"summary": "Use-of-uninitialized-value in XpackDynamicTable::_make_space",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66347\n\n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nXpackDynamicTable::_make_space\nXpackDynamicTable::insert_entry\nXpackDynamicTable::insert_entry\n```\n",
@@ -29,7 +29,8 @@
 				"10.0.1-rc0",
 				"10.0.1-rc1",
 				"10.0.1",
-				"10.0.2-rc0"
+				"10.0.2-rc0",
+				"10.0.2"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
