@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-112",
-	"modified": "2024-08-15T14:17:53.452644Z",
+	"modified": "2024-11-16T14:16:15.107559Z",
 	"published": "2024-02-16T00:05:47.896843Z",
 	"summary": "Stack-overflow in boost::read_graphviz_detail::parser::parse_subgraph",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66719\n\n```\nCrash type: Stack-overflow\nCrash state:\nboost::read_graphviz_detail::parser::parse_subgraph\nboost::read_graphviz_detail::parser::parse_endpoint_rest\nboost::read_graphviz_detail::parser::parse_stmt\n```\n",
@@ -30,7 +30,8 @@
 				"boost-1.85.0",
 				"boost-1.85.0.beta1",
 				"boost-1.86.0.beta1",
-				"boost-1.86.0"
+				"boost-1.86.0",
+				"boost-1.87.0.beta1"
 			],
 			"ecosystem_specific": {
 				"severity": "LOW"
