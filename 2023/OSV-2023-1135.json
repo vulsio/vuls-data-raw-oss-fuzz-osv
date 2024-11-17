@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1135",
-	"modified": "2024-11-13T14:21:51.852129Z",
+	"modified": "2024-11-17T14:15:55.212270Z",
 	"published": "2023-11-11T13:00:21.019255Z",
 	"summary": "Segv on unknown address in flb_sds_cat_safe",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64049\n\n```\nCrash type: Segv on unknown address\nCrash state:\nflb_sds_cat_safe\nflb_cf_key_translate\nflb_cf_section_property_add\n```\n",
@@ -57,7 +57,8 @@
 				"v3.1.8",
 				"v3.1.9",
 				"v3.1.10",
-				"v3.2.0"
+				"v3.2.0",
+				"v3.2.1"
 			],
 			"ecosystem_specific": {
 				"severity": null
