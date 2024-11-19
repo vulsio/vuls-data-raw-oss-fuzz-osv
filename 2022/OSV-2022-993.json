@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-993",
-	"modified": "2024-10-13T14:15:17.456212Z",
+	"modified": "2024-11-19T14:15:30.278635Z",
 	"published": "2022-09-29T00:02:10.256639Z",
 	"summary": "Stack-use-after-return in check_buffer",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910\n\n```\nCrash type: Stack-use-after-return READ 1\nCrash state:\ncheck_buffer\nr_bin_get_binplugin_by_buffer\nr_bin_file_new_from_buffer\n```\n",
@@ -32,7 +32,8 @@
 				"5.9.0",
 				"5.9.2",
 				"5.9.4",
-				"5.9.6"
+				"5.9.6",
+				"5.9.8"
 			],
 			"ecosystem_specific": {
 				"severity": null
