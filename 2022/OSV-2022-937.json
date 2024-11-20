@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-937",
-	"modified": "2024-08-21T14:11:58.216992Z",
+	"modified": "2024-11-20T14:29:52.980244Z",
 	"published": "2022-09-23T00:02:21.434097Z",
 	"summary": "Use-after-poison in rx_ip",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51687\n\n```\nCrash type: Use-after-poison READ 1\nCrash state:\nrx_ip\nmip_rx\nfuzz.c\n```\n",
@@ -30,7 +30,8 @@
 				"7.12",
 				"7.13",
 				"7.14",
-				"7.15"
+				"7.15",
+				"7.16"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

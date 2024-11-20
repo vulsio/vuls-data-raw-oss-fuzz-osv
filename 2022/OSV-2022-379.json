@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-379",
-	"modified": "2024-10-16T14:08:27.530702Z",
+	"modified": "2024-11-20T14:30:11.017879Z",
 	"published": "2022-04-27T00:00:44.539231Z",
 	"summary": "Segv on unknown address in bit_write_TV",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47014\n\n```\nCrash type: Segv on unknown address\nCrash state:\nbit_write_TV\nbit_write_T\ndwg_encode_BLOCK\n```\n",
@@ -589,7 +589,8 @@
 				"0.13.3.7385",
 				"0.13.3.7405",
 				"0.13.3.7409",
-				"0.13.3.7411"
+				"0.13.3.7411",
+				"0.13.3.7412"
 			],
 			"ecosystem_specific": {
 				"severity": null

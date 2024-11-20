@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1129",
-	"modified": "2024-11-12T14:11:16.464949Z",
+	"modified": "2024-11-20T14:29:16.864070Z",
 	"published": "2023-11-09T13:00:44.441721Z",
 	"summary": "UNKNOWN READ in HeifPixelImage::overlay",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63990\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nHeifPixelImage::overlay\nHeifContext::decode_overlay_image\nHeifContext::decode_image_planar\n```\n",
@@ -39,7 +39,9 @@
 				"v1.19.0",
 				"v1.19.1",
 				"v1.19.2",
-				"v1.19.3"
+				"v1.19.3",
+				"v1.19.4",
+				"v1.19.5"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
