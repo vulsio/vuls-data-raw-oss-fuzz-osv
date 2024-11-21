@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-820",
-	"modified": "2024-11-14T14:27:57.867542Z",
+	"modified": "2024-11-21T14:33:34.221276Z",
 	"published": "2021-06-02T00:00:31.619765Z",
 	"summary": "UNKNOWN READ in virtio_gpu_disable_scanout",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nvirtio_gpu_disable_scanout\nvirtio_gpu_set_scanout\nvirtio_gpu_simple_process_cmd\n```\n",
@@ -119,7 +119,12 @@
 				"v8.2.7",
 				"v9.0.3",
 				"v9.1.1",
-				"v9.2.0-rc0"
+				"v9.2.0-rc0",
+				"v7.2.15",
+				"v8.2.8",
+				"v9.0.4",
+				"v9.1.2",
+				"v9.2.0-rc1"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
