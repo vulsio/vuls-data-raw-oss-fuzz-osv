@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-51",
-	"modified": "2024-07-31T14:15:04.174372Z",
+	"modified": "2024-11-28T14:19:30.811723Z",
 	"published": "2023-02-05T13:00:54.245269Z",
 	"summary": "Heap-use-after-free in ZSTD_freeDDict",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55673\n\n```\nCrash type: Heap-use-after-free READ {*}\nCrash state:\nZSTD_freeDDict\nblosc2_free_ctx\nblosc2_schunk_free\n```\n",
@@ -70,7 +70,8 @@
 				"v2.14.3",
 				"v2.14.4",
 				"v2.15.0",
-				"v2.15.1"
+				"v2.15.1",
+				"v2.15.2"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

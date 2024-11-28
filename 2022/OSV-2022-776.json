@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-776",
-	"modified": "2024-07-31T14:12:08.249561Z",
+	"modified": "2024-11-28T14:17:10.546866Z",
 	"published": "2022-08-24T00:00:48.440951Z",
 	"summary": "Heap-buffer-overflow in do_job",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50528\n\n```\nCrash type: Heap-buffer-overflow WRITE 4\nCrash state:\ndo_job\nblosc_compress_context\nblosc2_compress\n```\n",
@@ -60,7 +60,8 @@
 				"v2.14.3",
 				"v2.14.4",
 				"v2.15.0",
-				"v2.15.1"
+				"v2.15.1",
+				"v2.15.2"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

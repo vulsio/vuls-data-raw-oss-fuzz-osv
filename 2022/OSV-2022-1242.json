@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1242",
-	"modified": "2024-07-31T14:09:46.086064Z",
+	"modified": "2024-11-28T14:13:59.904726Z",
 	"published": "2022-12-05T13:00:52.919257Z",
 	"summary": "Heap-buffer-overflow in ZSTD_createDDict",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54015\n\n```\nCrash type: Heap-buffer-overflow READ {*}\nCrash state:\nZSTD_createDDict\nblosc_run_decompression_with_context\nblosc2_decompress_ctx\n```\n",
@@ -68,7 +68,8 @@
 				"v2.14.3",
 				"v2.14.4",
 				"v2.15.0",
-				"v2.15.1"
+				"v2.15.1",
+				"v2.15.2"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
