@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-278",
-	"modified": "2024-11-08T14:23:02.065871Z",
+	"modified": "2024-12-01T14:17:01.972285Z",
 	"published": "2024-04-19T00:12:11.684954Z",
 	"summary": "Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68092\n\n```\nCrash type: Security exception\nCrash state:\ncom.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr\njava.base/java.nio.HeapCharBuffer.<init>\njava.base/java.nio.CharBuffer.wrap\n```\n",
@@ -31,7 +31,8 @@
 				"checkstyle-10.18.2",
 				"checkstyle-10.19.0",
 				"checkstyle-10.20.0",
-				"checkstyle-10.20.1"
+				"checkstyle-10.20.1",
+				"checkstyle-10.20.2"
 			],
 			"ecosystem_specific": {
 				"severity": "LOW"
