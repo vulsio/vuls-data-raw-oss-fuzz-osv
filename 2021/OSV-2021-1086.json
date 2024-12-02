@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-1086",
-	"modified": "2024-11-20T14:30:05.789328Z",
+	"modified": "2024-12-02T14:21:25.646085Z",
 	"published": "2021-08-02T00:00:31.888461Z",
 	"summary": "Heap-buffer-overflow in dwg_convert_SAB_to_SAT1",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728\n\n```\nCrash type: Heap-buffer-overflow READ 2\nCrash state:\ndwg_convert_SAB_to_SAT1\ndxf_3dsolid\ndwg_dxf_REGION_private\n```\n",
@@ -652,7 +652,8 @@
 				"0.13.3.7405",
 				"0.13.3.7409",
 				"0.13.3.7411",
-				"0.13.3.7412"
+				"0.13.3.7412",
+				"0.13.3.7414"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

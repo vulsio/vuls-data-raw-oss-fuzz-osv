@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1267",
-	"modified": "2024-11-20T14:30:45.969759Z",
+	"modified": "2024-12-02T14:19:17.325229Z",
 	"published": "2023-12-08T00:11:02.971903Z",
 	"summary": "Heap-buffer-overflow in dwg_free_object",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64829\n\n```\nCrash type: Heap-buffer-overflow READ 8\nCrash state:\ndwg_free_object\ndwg_free\nllvmfuzz.c\n```\n",
@@ -75,7 +75,8 @@
 				"0.13.3.7405",
 				"0.13.3.7409",
 				"0.13.3.7411",
-				"0.13.3.7412"
+				"0.13.3.7412",
+				"0.13.3.7414"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
