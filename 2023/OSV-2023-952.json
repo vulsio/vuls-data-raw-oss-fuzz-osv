@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-952",
-	"modified": "2024-09-02T14:18:57.342576Z",
+	"modified": "2024-12-03T14:24:01.507466Z",
 	"published": "2023-10-02T13:03:05.682426Z",
 	"summary": "Heap-buffer-overflow in back_passDoAction",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62875\n\n```\nCrash type: Heap-buffer-overflow READ 10\nCrash state:\nback_passDoAction\n_lou_backTranslate\nlou_backTranslateString\n```\n",
@@ -29,7 +29,8 @@
 				"v3.28.0",
 				"v3.29.0",
 				"v3.30.0",
-				"v3.31.0"
+				"v3.31.0",
+				"v3.32.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
