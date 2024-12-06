@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2018-204",
-	"modified": "2024-06-11T14:00:31.289611Z",
+	"modified": "2024-12-06T14:06:23.405093Z",
 	"published": "2021-01-13T00:01:23.035709Z",
 	"summary": "UNKNOWN WRITE in __msan_memcpy.part.51",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845\n\n```\nCrash type: UNKNOWN WRITE\nCrash state:\n__msan_memcpy.part.51\nQuickOpen::ReadRaw\nQuickOpen::ReadNext\n```\n",
@@ -36,7 +36,8 @@
 				"tag-6.1.7",
 				"v7.0.7",
 				"v7.0.8",
-				"v7.0.9"
+				"v7.0.9",
+				"v7.10.2"
 			],
 			"ecosystem_specific": {
 				"introduced_range": "9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6",
