@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-800",
-	"modified": "2024-11-08T14:19:20.844689Z",
+	"modified": "2024-12-07T14:13:01.783403Z",
 	"published": "2023-09-07T14:00:27.693270Z",
 	"summary": "Heap-buffer-overflow in XCFImageFormat::loadTileRLE",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62098\n\n```\nCrash type: Heap-buffer-overflow WRITE 1\nCrash state:\nXCFImageFormat::loadTileRLE\nXCFImageFormat::loadLevel\nXCFImageFormat::loadHierarchy\n```\n",
@@ -60,7 +60,8 @@
 				"v6.7.0-rc1",
 				"v6.7.0",
 				"v6.8.0-rc1",
-				"v6.8.0"
+				"v6.8.0",
+				"v6.9.0-rc1"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
