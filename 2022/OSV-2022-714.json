@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-714",
-	"modified": "2024-12-02T14:18:54.495381Z",
+	"modified": "2024-12-08T14:06:05.741465Z",
 	"published": "2022-08-15T00:00:47.794062Z",
 	"summary": "Heap-buffer-overflow in dynapi_set_helper",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194\n\n```\nCrash type: Heap-buffer-overflow WRITE 16\nCrash state:\ndynapi_set_helper\ndwg_dynapi_header_set_value\njson_HEADER\n```\n",
@@ -568,7 +568,8 @@
 				"0.13.3.7409",
 				"0.13.3.7411",
 				"0.13.3.7412",
-				"0.13.3.7414"
+				"0.13.3.7414",
+				"0.13.3.7420"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

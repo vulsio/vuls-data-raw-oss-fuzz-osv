@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-307",
-	"modified": "2024-12-02T14:19:40.587918Z",
+	"modified": "2024-12-08T14:12:14.688204Z",
 	"published": "2023-04-13T14:02:09.774988Z",
 	"summary": "Heap-buffer-overflow in bit_read_BB",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57911\n\n```\nCrash type: Heap-buffer-overflow READ 1\nCrash state:\nbit_read_BB\ndwg_decode_entity\ndwg_decode_OLE2FRAME_private\n```\n",
@@ -556,7 +556,8 @@
 				"0.13.3.7409",
 				"0.13.3.7411",
 				"0.13.3.7412",
-				"0.13.3.7414"
+				"0.13.3.7414",
+				"0.13.3.7420"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
