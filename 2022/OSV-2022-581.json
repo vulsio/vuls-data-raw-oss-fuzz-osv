@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-581",
-	"modified": "2024-12-04T14:40:59.306527Z",
+	"modified": "2024-12-11T14:36:33.804671Z",
 	"published": "2022-07-14T00:00:45.644503Z",
 	"summary": "Heap-buffer-overflow in megasas_map_sgl",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49086\n\n```\nCrash type: Heap-buffer-overflow READ 4\nCrash state:\nmegasas_map_sgl\nmegasas_mmio_write\nmegasas_port_write\n```\n",
@@ -119,7 +119,8 @@
 				"v9.1.2",
 				"v9.2.0-rc1",
 				"v9.2.0-rc2",
-				"v9.2.0-rc3"
+				"v9.2.0-rc3",
+				"v9.2.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
