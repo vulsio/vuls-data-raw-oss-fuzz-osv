@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-384",
-	"modified": "2024-12-08T14:09:55.121248Z",
+	"modified": "2024-12-12T14:23:33.742431Z",
 	"published": "2024-04-30T00:12:26.560732Z",
 	"summary": "Heap-use-after-free in json_fixed_string",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67528\n\n```\nCrash type: Heap-use-after-free WRITE 11\nCrash state:\njson_fixed_string\njson_RNUMBER_Header\ndwg_read_json\n```\n",
@@ -77,7 +77,8 @@
 				"0.13.3.7411",
 				"0.13.3.7412",
 				"0.13.3.7414",
-				"0.13.3.7420"
+				"0.13.3.7420",
+				"0.13.3.7424"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-467",
-	"modified": "2023-06-08T14:01:12.964880Z",
+	"modified": "2024-12-12T14:12:48.510389Z",
 	"published": "2023-06-08T14:01:12.964629Z",
 	"summary": "Stack-buffer-overflow in SetPitchGradient",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59636\n\n```\nCrash type: Stack-buffer-overflow WRITE 1\nCrash state:\nSetPitchGradient\ncalc_pitches\nCalcPitches\n```\n",
@@ -27,7 +27,8 @@
 				}
 			],
 			"versions": [
-				"1.51"
+				"1.51",
+				"1.52.0"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

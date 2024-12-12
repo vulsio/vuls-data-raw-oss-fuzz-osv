@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1259",
-	"modified": "2024-12-08T14:09:01.370111Z",
+	"modified": "2024-12-12T14:08:18.971390Z",
 	"published": "2022-12-13T13:00:46.870838Z",
 	"summary": "Heap-buffer-overflow in dwg_decode_INSERT_private",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54228\n\n```\nCrash type: Heap-buffer-overflow READ 1\nCrash state:\ndwg_decode_INSERT_private\ndwg_decode_INSERT\ndwg_decode_add_object\n```\n",
@@ -569,7 +569,8 @@
 				"0.13.3.7411",
 				"0.13.3.7412",
 				"0.13.3.7414",
-				"0.13.3.7420"
+				"0.13.3.7420",
+				"0.13.3.7424"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

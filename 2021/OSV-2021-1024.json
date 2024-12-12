@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-1024",
-	"modified": "2022-06-22T00:04:11.214286Z",
+	"modified": "2024-12-12T14:04:16.162668Z",
 	"published": "2021-07-17T00:00:48.123388Z",
 	"summary": "Global-buffer-overflow in GetSsmlAttribute",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36228\n\n```\nCrash type: Global-buffer-overflow READ 1\nCrash state:\nGetSsmlAttribute\nGetVoiceAttributes\nProcessSsmlTag\n```\n",
@@ -25,7 +25,8 @@
 			],
 			"versions": [
 				"1.51",
-				"1.51.1"
+				"1.51.1",
+				"1.52.0"
 			],
 			"ecosystem_specific": {
 				"severity": null

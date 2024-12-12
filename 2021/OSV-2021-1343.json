@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-1343",
-	"modified": "2024-12-08T14:08:35.478654Z",
+	"modified": "2024-12-12T14:07:48.040449Z",
 	"published": "2021-09-21T00:01:33.177403Z",
 	"summary": "Heap-buffer-overflow in get_next_owned_entity",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994\n\n```\nCrash type: Heap-buffer-overflow READ 8\nCrash state:\nget_next_owned_entity\ndwg_write_dxfb\nllvmfuzz.c\n```\n",
@@ -641,7 +641,8 @@
 				"0.13.3.7411",
 				"0.13.3.7412",
 				"0.13.3.7414",
-				"0.13.3.7420"
+				"0.13.3.7420",
+				"0.13.3.7424"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

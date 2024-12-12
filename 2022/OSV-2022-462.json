@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-462",
-	"modified": "2022-06-07T00:01:47.521754Z",
+	"modified": "2024-12-12T14:05:18.409821Z",
 	"published": "2022-06-07T00:01:47.521548Z",
 	"summary": "Stack-buffer-overflow in strcat",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47841\n\n```\nCrash type: Stack-buffer-overflow WRITE 5\nCrash state:\nstrcat\nTranslateNumber\nTranslateWord3\n```\n",
@@ -25,7 +25,8 @@
 			],
 			"versions": [
 				"1.51",
-				"1.51.1"
+				"1.51.1",
+				"1.52.0"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
