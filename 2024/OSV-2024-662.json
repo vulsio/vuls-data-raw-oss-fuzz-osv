@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-662",
-	"modified": "2024-09-02T14:18:22.225027Z",
+	"modified": "2024-12-17T14:14:09.804846Z",
 	"published": "2024-07-18T00:06:40.832938Z",
 	"summary": "Security exception in com.github.javaparser.CommentsInserter.insertComments",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70313\n\n```\nCrash type: Security exception\nCrash state:\ncom.github.javaparser.CommentsInserter.insertComments\njava.base/java.util.Objects.equals\ncom.github.javaparser.Position.equals\n```\n",
@@ -24,7 +24,9 @@
 				}
 			],
 			"versions": [
-				"javaparser-parent-3.26.2"
+				"javaparser-parent-3.26.2",
+				"javaparser-parent-3.26.3",
+				"v_snapshot_2751159"
 			],
 			"ecosystem_specific": {
 				"severity": "LOW"

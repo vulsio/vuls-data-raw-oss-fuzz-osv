@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-85",
-	"modified": "2024-09-02T14:19:53.570673Z",
+	"modified": "2024-12-17T14:19:29.690615Z",
 	"published": "2024-02-08T00:13:58.690460Z",
 	"summary": "Security exception in com.github.javaparser.ast.validator.TreeVisitorValidator.accept",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66357\n\n```\nCrash type: Security exception\nCrash state:\ncom.github.javaparser.ast.validator.TreeVisitorValidator.accept\ncom.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel\ncom.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel\n```\n",
@@ -29,7 +29,9 @@
 				"javaparser-parent-3.26.0",
 				"javaparser-parent-3.26.1",
 				"v_snapshot_70ed981",
-				"javaparser-parent-3.26.2"
+				"javaparser-parent-3.26.2",
+				"javaparser-parent-3.26.3",
+				"v_snapshot_2751159"
 			],
 			"ecosystem_specific": {
 				"severity": "LOW"
