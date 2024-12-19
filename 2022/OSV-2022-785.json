@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-785",
-	"modified": "2024-02-15T14:07:47.164586Z",
+	"modified": "2024-12-19T14:04:57.177321Z",
 	"published": "2022-08-27T00:00:14.614126Z",
 	"summary": "Heap-buffer-overflow in resize_packet",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50617\n\n```\nCrash type: Heap-buffer-overflow WRITE {*}\nCrash state:\nresize_packet\nFuzzResizePacket\nfuzz_rfc1035.c\n```\n",
@@ -58,7 +58,8 @@
 				"v2.90test3",
 				"v2.90test4",
 				"v2.90",
-				"v2.90deb2"
+				"v2.90deb2",
+				"v2.91test1"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
