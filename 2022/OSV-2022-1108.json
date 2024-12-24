@@ -12,41 +12,6 @@
 				"name": "ruby",
 				"purl": "pkg:generic/ruby"
 			},
-			"ranges": [
-				{
-					"type": "GIT",
-					"repo": "https://github.com/ruby/ruby.git",
-					"events": [
-						{
-							"introduced": "67de00053a26db9d976efa393d121479b5315f5e"
-						}
-					]
-				}
-			],
-			"versions": [
-				"v3_2_0",
-				"v3_2_0_preview3",
-				"v3_2_0_rc1",
-				"v3_2_1",
-				"v3_2_2",
-				"v3_2_3",
-				"v3_2_4",
-				"v3_2_5",
-				"v3_2_6",
-				"v3_3_0",
-				"v3_3_0_preview1",
-				"v3_3_0_preview2",
-				"v3_3_0_preview3",
-				"v3_3_1",
-				"v3_3_2",
-				"v3_3_3",
-				"v3_3_4",
-				"v3_3_5",
-				"v3_3_6",
-				"v3_4_0_preview1",
-				"v3_4_0_preview2",
-				"v3_4_0_rc1"
-			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
 			},
