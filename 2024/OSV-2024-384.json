@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-384",
-	"modified": "2024-12-24T14:20:17.989242Z",
+	"modified": "2024-12-25T14:21:22.172697Z",
 	"published": "2024-04-30T00:12:26.560732Z",
 	"summary": "Heap-use-after-free in json_fixed_string",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67528\n\n```\nCrash type: Heap-use-after-free WRITE 11\nCrash state:\njson_fixed_string\njson_RNUMBER_Header\ndwg_read_json\n```\n",
@@ -19,6 +19,9 @@
 					"events": [
 						{
 							"introduced": "6d082fd0b2c6c33914cbdc943370b9a0a5dd3ef0"
+						},
+						{
+							"fixed": "56d392a7e5ae5f522004ff92396dabd468f8d810"
 						}
 					]
 				}
@@ -60,7 +63,6 @@
 				"0.13.3.7298",
 				"0.13.3.7306",
 				"0.13.3.7308",
-				"0.13.3.7311",
 				"0.13.3.7320",
 				"0.13.3.7324",
 				"0.13.3.7327",
@@ -78,13 +80,13 @@
 				"0.13.3.7412",
 				"0.13.3.7414",
 				"0.13.3.7420",
-				"0.13.3.7424",
-				"0.13.3.7426"
+				"0.13.3.7424"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
 			},
 			"database_specific": {
+				"fixed_range": "47a07e5fadfd335adf63cb3ff995edbda86565a3:56d392a7e5ae5f522004ff92396dabd468f8d810",
 				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/libredwg/OSV-2024-384.yaml"
 			}
 		}
