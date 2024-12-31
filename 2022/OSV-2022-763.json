@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-763",
-	"modified": "2024-10-21T14:10:57.438169Z",
+	"modified": "2024-12-31T14:10:18.970150Z",
 	"published": "2022-08-21T00:00:23.656015Z",
 	"summary": "Heap-buffer-overflow in sqlite3VdbeExec",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50466\n\n```\nCrash type: Heap-buffer-overflow READ {*}\nCrash state:\nsqlite3VdbeExec\nsqlite3_step\nosquery::readRows\n```\n",
@@ -43,7 +43,8 @@
 				"5.13.0",
 				"5.13.1",
 				"5.14.0",
-				"5.14.1"
+				"5.14.1",
+				"5.15.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
