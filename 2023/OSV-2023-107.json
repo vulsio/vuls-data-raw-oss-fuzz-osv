@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-107",
-	"modified": "2024-10-25T14:22:18.854507Z",
+	"modified": "2025-01-01T14:24:00.535331Z",
 	"published": "2023-02-25T13:00:07.390537Z",
 	"summary": "Heap-buffer-overflow in DecodeBasicOcspResponse",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308\n\n```\nCrash type: Heap-buffer-overflow READ {*}\nCrash state:\nDecodeBasicOcspResponse\nOcspResponseDecode\nocsp.c\n```\n",
@@ -33,7 +33,8 @@
 				"v5.7.0-stable",
 				"wolfEntropy1",
 				"v5.7.2-stable",
-				"v5.7.4-stable"
+				"v5.7.4-stable",
+				"v5.7.6-stable"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
