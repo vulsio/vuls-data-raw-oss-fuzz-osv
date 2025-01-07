@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1186",
-	"modified": "2024-10-08T00:15:47.433701Z",
+	"modified": "2025-01-07T14:18:41.454320Z",
 	"published": "2024-10-08T00:15:47.433219Z",
 	"summary": "UNKNOWN READ in cfl_sds_len",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=371659893\n\n```\nCrash type: UNKNOWN READ\nCrash state:\ncfl_sds_len\nunpack_meta_opts\ncmt_mpack_unpack_map\n```\n",
@@ -19,6 +19,9 @@
 					"events": [
 						{
 							"introduced": "03afd1f185b4814a35ed5f5e81f3d4a687f114dc"
+						},
+						{
+							"introduced": "4c37d914cb50b2135ea76c2dc1c16be9418ae0d4"
 						}
 					]
 				}
