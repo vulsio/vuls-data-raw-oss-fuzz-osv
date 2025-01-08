@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1141",
-	"modified": "2024-12-13T14:13:56.738294Z",
+	"modified": "2025-01-08T14:05:54.832208Z",
 	"published": "2022-11-06T00:00:12.813664Z",
 	"summary": "Heap-buffer-overflow in LibRaw::phase_one_correct",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53039\n\n```\nCrash type: Heap-buffer-overflow READ 4\nCrash state:\nLibRaw::phase_one_correct\nLibRaw::raw2image_ex\nLibRaw::dcraw_process\n```\n",
@@ -80,7 +80,8 @@
 				"v6.8.0-rc1",
 				"v6.8.0",
 				"v6.9.0-rc1",
-				"v6.9.0"
+				"v6.9.0",
+				"v6.10.0-rc1"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

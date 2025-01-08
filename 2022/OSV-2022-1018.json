@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1018",
-	"modified": "2024-12-13T14:14:32.065105Z",
+	"modified": "2025-01-08T14:05:32.473677Z",
 	"published": "2022-10-06T00:02:27.511658Z",
 	"summary": "Index-out-of-bounds in LibRaw::kodak_radc_load_raw",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52139\n\n```\nCrash type: Index-out-of-bounds\nCrash state:\nLibRaw::kodak_radc_load_raw\nLibRaw::unpack\nLoadRAW\n```\n",
@@ -80,7 +80,8 @@
 				"v6.8.0-rc1",
 				"v6.8.0",
 				"v6.9.0-rc1",
-				"v6.9.0"
+				"v6.9.0",
+				"v6.10.0-rc1"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
