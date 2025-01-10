@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-382",
-	"modified": "2024-04-30T00:12:20.588566Z",
+	"modified": "2025-01-10T05:02:26.672897Z",
 	"published": "2024-04-30T00:12:20.588223Z",
 	"summary": "UNKNOWN READ in pcpp::Packet::destructPacketData",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67193\n\n```\nCrash type: UNKNOWN READ\nCrash state:\npcpp::Packet::destructPacketData\nPacket.h\n```\n",
@@ -22,6 +22,9 @@
 						}
 					]
 				}
+			],
+			"versions": [
+				"v24.09"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

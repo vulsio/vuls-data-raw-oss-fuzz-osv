@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-251",
-	"modified": "2024-04-29T11:38:05.915041Z",
+	"modified": "2025-01-10T05:30:43.786965Z",
 	"published": "2024-04-12T00:02:31.478145Z",
 	"summary": "Heap-use-after-free in gx_device_forward_finalize",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67932\n\n```\nCrash type: Heap-use-after-free READ 8\nCrash state:\ngx_device_forward_finalize\ngx_device_finalize\ngs_gc_reclaim\n```\n",
@@ -47,7 +47,9 @@
 				"ghostpdl-10.03.0rc1",
 				"ghostpdl-10.03.0rc1_test",
 				"ghostpdl-10.03.0rc1_test002",
-				"ghostpdl-10.03.0rc1_test003"
+				"ghostpdl-10.03.0rc1_test003",
+				"ghostpdl-10.03.0",
+				"ghostpdl-10.03.1"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

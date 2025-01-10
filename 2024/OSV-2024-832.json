@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-832",
-	"modified": "2024-08-16T00:03:13.834599Z",
+	"modified": "2025-01-10T05:18:27.558670Z",
 	"published": "2024-08-16T00:03:13.834235Z",
 	"summary": "UNKNOWN READ in Pistache::Http::Header::Expect::parseRaw",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69151\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nPistache::Http::Header::Expect::parseRaw\nPistache::Http::Private::HeadersStep::apply\nPistache::Http::Private::ParserBase::parse\n```\n",
@@ -22,6 +22,9 @@
 						},
 						{
 							"fixed": "bbc70155ee1981081a3687eb28e54daefa32f6c0"
+						},
+						{
+							"fixed": "a23aa538d7213589e49f4b92d489053668768f08"
 						}
 					]
 				}

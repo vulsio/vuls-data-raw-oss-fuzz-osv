@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1091",
-	"modified": "2024-04-29T11:42:39.813761Z",
+	"modified": "2025-01-10T05:29:55.716665Z",
 	"published": "2023-10-31T13:01:22.289748Z",
 	"summary": "Heap-buffer-overflow in H5F_addr_decode",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63743\n\n```\nCrash type: Heap-buffer-overflow READ 1\nCrash state:\nH5F_addr_decode\nH5O__shared_decode\nH5O__fill_new_shared_decode\n```\n",
@@ -50,7 +50,9 @@
 				"hdf5_1.14.4.2",
 				"snapshot-1.10",
 				"snapshot-1.12",
-				"snapshot-1.14"
+				"snapshot-1.14",
+				"hdf5_1.14.4.3",
+				"hdf5_1.14.5"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

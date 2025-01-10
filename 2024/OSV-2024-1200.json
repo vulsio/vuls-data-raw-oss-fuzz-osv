@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1200",
-	"modified": "2024-10-11T00:02:19.537837Z",
+	"modified": "2025-01-10T05:09:26.885831Z",
 	"published": "2024-10-11T00:02:19.537501Z",
 	"summary": "UNKNOWN READ in eat_line",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372515100\n\n```\nCrash type: UNKNOWN READ\nCrash state:\neat_line\nextract_field\nparse_sdp_session\n```\n",
@@ -22,6 +22,9 @@
 						},
 						{
 							"fixed": "e802f9187383feb7fdd96c4ded44fda403da4535"
+						},
+						{
+							"fixed": "e650ace5948c76ea2d8eb7eaeebb5c349970447d"
 						}
 					]
 				}

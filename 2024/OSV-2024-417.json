@@ -19,6 +19,9 @@
 					"events": [
 						{
 							"introduced": "0d9ea840bc8c482ca043fb9bbd6376088e37fbcc"
+						},
+						{
+							"fixed": "3e89a7e8db8139db356b892ca9993172346c80cf"
 						}
 					]
 				}
@@ -27,6 +30,7 @@
 				"severity": "MEDIUM"
 			},
 			"database_specific": {
+				"fixed_range": "d2e3212de29bac1ceed33ca8ab8bbff3f41a2459:3e89a7e8db8139db356b892ca9993172346c80cf",
 				"introduced_range": "d69e8b46184b6fd844a4a92b4a6f4347d08ee439:2db0eb3f96a5756298dcd7f9319e56a98585bd10",
 				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/boringssl/OSV-2024-417.yaml"
 			}

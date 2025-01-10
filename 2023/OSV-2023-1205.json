@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1205",
-	"modified": "2024-04-29T11:21:55.556489Z",
+	"modified": "2025-01-10T05:07:48.976928Z",
 	"published": "2023-11-24T13:00:14.783667Z",
 	"summary": "Heap-buffer-overflow in isvcd_populate_res_prms",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64431\n\n```\nCrash type: Heap-buffer-overflow WRITE 1\nCrash state:\nisvcd_populate_res_prms\nisvcd_parse_interlayer_resamp_func_init\nisvcd_mark_err_slice_skip\n```\n",

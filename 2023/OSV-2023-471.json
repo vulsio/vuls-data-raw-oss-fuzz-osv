@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-471",
-	"modified": "2024-04-29T14:35:35.936516Z",
+	"modified": "2025-01-10T06:27:47.515656Z",
 	"published": "2023-06-09T14:00:54.620201Z",
 	"summary": "Heap-buffer-overflow in H5FS__sinfo_serialize_node_cb",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59695\n\n```\nCrash type: Heap-buffer-overflow WRITE 1\nCrash state:\nH5FS__sinfo_serialize_node_cb\nH5SL_iterate\nH5FS__cache_sinfo_serialize\n```\n",
@@ -50,7 +50,9 @@
 				"hdf5_1.14.4.2",
 				"snapshot-1.10",
 				"snapshot-1.12",
-				"snapshot-1.14"
+				"snapshot-1.14",
+				"hdf5_1.14.4.3",
+				"hdf5_1.14.5"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

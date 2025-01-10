@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1066",
-	"modified": "2024-09-13T00:14:35.160137Z",
+	"modified": "2025-01-10T05:47:49.595046Z",
 	"published": "2024-09-13T00:14:35.159638Z",
 	"summary": "Heap-buffer-overflow in StrLen",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71496\n\n```\nCrash type: Heap-buffer-overflow READ 2\nCrash state:\nStrLen\nMangleFileName\nToolChainHarnessLib.c\n```\n",
@@ -28,7 +28,8 @@
 			],
 			"versions": [
 				"edk2-stable202405",
-				"edk2-stable202408"
+				"edk2-stable202408",
+				"edk2-stable202408.01"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

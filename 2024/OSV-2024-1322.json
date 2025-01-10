@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1322",
-	"modified": "2024-11-18T00:00:16.619Z",
+	"modified": "2025-01-10T05:14:53.836802Z",
 	"published": "2024-11-18T00:00:16.618504Z",
 	"summary": "Security exception in com.alibaba.fastjson2.JSONReader.readObject",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379180973\n\n```\nCrash type: Security exception\nCrash state:\ncom.alibaba.fastjson2.JSONReader.readObject\njava.base/java.nio.charset.CharsetEncoder.replaceWith\njava.base/java.nio.charset.CharsetEncoder.<init>\n```\n",
@@ -76,7 +76,9 @@
 				"2.0.52",
 				"2.0.52.android5",
 				"2.0.52.android8",
-				"2.0.53"
+				"2.0.53",
+				"2.0.53.android5",
+				"2.0.53.android8"
 			],
 			"ecosystem_specific": {
 				"severity": "LOW"

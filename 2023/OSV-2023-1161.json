@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1161",
-	"modified": "2024-04-29T11:26:01.442030Z",
+	"modified": "2025-01-10T05:16:23.655448Z",
 	"published": "2023-11-14T13:03:13.962614Z",
 	"summary": "Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64151\n\n```\nCrash type: Heap-buffer-overflow READ {*}\nCrash state:\nstd::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch\nExiv2::QuickTimeVideo::NikonTagsDecoder\nExiv2::QuickTimeVideo::userDataDecoder\n```\n",
@@ -30,7 +30,8 @@
 				"nightly-0.28.x",
 				"v0.28.0",
 				"v0.28.1",
-				"v0.28.2"
+				"v0.28.2",
+				"v0.28.3"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

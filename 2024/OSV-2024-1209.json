@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1209",
-	"modified": "2024-10-11T00:15:43.611199Z",
+	"modified": "2025-01-10T05:14:06.855803Z",
 	"published": "2024-10-11T00:15:43.610812Z",
 	"summary": "Heap-use-after-free in xmlValidateOneElement",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372547409\n\n```\nCrash type: Heap-use-after-free READ 4\nCrash state:\nxmlValidateOneElement\nxmlValidateElement\napi.c\n```\n",
@@ -31,7 +31,8 @@
 				"v2.13.1",
 				"v2.13.2",
 				"v2.13.3",
-				"v2.13.4"
+				"v2.13.4",
+				"v2.13.5"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

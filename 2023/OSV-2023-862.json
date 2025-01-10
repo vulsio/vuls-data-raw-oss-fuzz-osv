@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-862",
-	"modified": "2024-10-27T14:39:02.547754Z",
+	"modified": "2025-01-10T05:49:31.753574Z",
 	"published": "2023-09-16T14:01:07.280790Z",
 	"summary": "Heap-use-after-free in g_datalist_get_flags",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62381\n\n```\nCrash type: Heap-use-after-free READ 8\nCrash state:\ng_datalist_get_flags\ng_object_unref\ngst_object_unref\n```\n",
@@ -38,7 +38,10 @@
 				"1.24.5",
 				"1.24.6",
 				"1.24.7",
-				"1.24.8"
+				"1.24.8",
+				"1.24.10",
+				"1.24.11",
+				"1.24.9"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

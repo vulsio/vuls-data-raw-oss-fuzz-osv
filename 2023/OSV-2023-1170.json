@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-1170",
-	"modified": "2023-11-16T13:02:54.952092Z",
+	"modified": "2025-01-10T05:15:17.036441Z",
 	"published": "2023-11-16T13:02:54.951826Z",
 	"summary": "UNKNOWN READ in loader_log",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42530193\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nloader_log\nloader_scanned_icd_add\nloader_icd_scan\n```\n",
@@ -56,7 +56,8 @@
 				"vulkan-sdk-1.3.275.0",
 				"vulkan-sdk-1.3.280.0",
 				"vulkan-sdk-1.3.283.0",
-				"vulkan-sdk-1.3.290.0"
+				"vulkan-sdk-1.3.290.0",
+				"vulkan-sdk-1.3.296.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

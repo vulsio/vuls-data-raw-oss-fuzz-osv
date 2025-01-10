@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1090",
-	"modified": "2024-09-19T00:00:17.390515Z",
+	"modified": "2025-01-10T05:12:48.974830Z",
 	"published": "2024-09-19T00:00:17.390184Z",
 	"summary": "UNKNOWN READ in ggml_free",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538517\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nggml_free\nllama_model::~llama_model\nllama_load_model_from_file\n```\n",
@@ -181,7 +181,17 @@
 				"b3985",
 				"b3987",
 				"b3988",
-				"b3989"
+				"b3989",
+				"b3757",
+				"b3758",
+				"b3769",
+				"b3796",
+				"b3810",
+				"b3928",
+				"b3937",
+				"b3959",
+				"b3965",
+				"b3969"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

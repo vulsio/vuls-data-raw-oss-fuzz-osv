@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-379",
-	"modified": "2024-05-27T14:16:07.509934Z",
+	"modified": "2025-01-10T05:30:29.297578Z",
 	"published": "2024-04-30T00:12:09.539697Z",
 	"summary": "UNKNOWN READ in H5SL_first",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67923\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nH5SL_first\nH5FS_sect_find\nH5MF__find_sect\n```\n",
@@ -40,6 +40,9 @@
 						},
 						{
 							"fixed": "43affeb0f388466b5be555879d91d14037be0e99"
+						},
+						{
+							"fixed": "e3c709b1eda4d120d6713c738daace7408140e6e"
 						}
 					]
 				}
