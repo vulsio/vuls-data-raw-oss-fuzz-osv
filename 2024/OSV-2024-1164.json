@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1164",
-	"modified": "2025-01-10T05:05:56.968693Z",
+	"modified": "2025-01-11T14:22:41.737787Z",
 	"published": "2024-10-02T00:13:05.449687Z",
 	"summary": "Use-of-uninitialized-value in format_message",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=369652826\n\n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nformat_message\nultrahdr::JpegEncoderHelper::encode\nultrahdr::JpegEncoderHelper::compressImage\n```\n",
@@ -25,7 +25,8 @@
 			],
 			"versions": [
 				"v1.3.0",
-				"v1.3.1"
+				"v1.3.1",
+				"v1.4.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
