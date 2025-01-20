@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-655",
-	"modified": "2024-07-17T00:06:15.877662Z",
+	"modified": "2025-01-20T14:16:56.943611Z",
 	"published": "2024-07-17T00:06:15.877340Z",
 	"summary": "Stack-buffer-overflow in UnrollChunkyBytes",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70395\n\n```\nCrash type: Stack-buffer-overflow READ 1\nCrash state:\nUnrollChunkyBytes\nCachedXFORM\ncmsDoTransform\n```\n",
@@ -26,7 +26,8 @@
 			"versions": [
 				"lcm2.16rc1",
 				"lcms2.16",
-				"lcms2.16rc1"
+				"lcms2.16rc1",
+				"lcms2.17rc0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
