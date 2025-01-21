@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1106",
-	"modified": "2025-01-20T14:08:03.908489Z",
+	"modified": "2025-01-21T14:28:36.880578Z",
 	"published": "2022-10-28T00:02:37.921684Z",
 	"summary": "Heap-buffer-overflow in APFSJObject::add_entry",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52764\n\n```\nCrash type: Heap-buffer-overflow READ {*}\nCrash state:\nAPFSJObject::add_entry\nAPFSJObject::APFSJObject\nAPFSJObject::APFSJObject\n```\n",
@@ -26,7 +26,13 @@
 			"versions": [
 				"sleuthkit-4.12.0",
 				"sleuthkit-4.12.1",
-				"ct-3.6.0"
+				"ct-3.6.0",
+				"ct-3.10.0",
+				"ct-3.11.0",
+				"ct-3.12.0",
+				"ct-3.13.0",
+				"ct-3.8.0",
+				"ct-3.9.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
