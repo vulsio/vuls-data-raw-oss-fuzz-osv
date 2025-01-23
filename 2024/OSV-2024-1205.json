@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1205",
-	"modified": "2024-10-11T00:12:59.211855Z",
+	"modified": "2025-01-23T14:16:02.420761Z",
 	"published": "2024-10-11T00:12:59.211479Z",
 	"summary": "Memcpy-param-overlap in repeat",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372515088\n\n```\nCrash type: Memcpy-param-overlap\nCrash state:\nrepeat\nrepeat\np_ere\n```\n",
@@ -51,7 +51,9 @@
 				"clamav-1.3.2",
 				"clamav-1.4.0",
 				"clamav-1.4.0-rc",
-				"clamav-1.4.1"
+				"clamav-1.4.1",
+				"clamav-1.0.8",
+				"clamav-1.4.2"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
