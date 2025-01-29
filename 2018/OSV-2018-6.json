@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2018-6",
-	"modified": "2025-01-28T14:07:59.337923Z",
+	"modified": "2025-01-29T14:12:03.448199Z",
 	"published": "2021-01-13T00:00:02.571744Z",
 	"summary": "Use-of-uninitialized-value in DosSlashToUnix",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307\n\n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nDosSlashToUnix\nExtractUnixLink50\nExtractSymlink\n```\n",
