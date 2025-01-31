@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-675",
-	"modified": "2025-01-10T05:07:31.617721Z",
+	"modified": "2025-01-31T14:20:54.537208Z",
 	"published": "2022-08-06T00:00:51.363676Z",
 	"summary": "Heap-buffer-overflow in void RDKit::ParseV3000AtomProps<std::__1::vector<std::__1::basic_string_view<cha",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49783\n\n```\nCrash type: Heap-buffer-overflow READ 1\nCrash state:\nvoid RDKit::ParseV3000AtomProps<std::__1::vector<std::__1::basic_string_view<cha\nRDKit::ParseV3000AtomBlock\nRDKit::FileParserUtils::ParseV3000CTAB\n```\n",
@@ -52,7 +52,8 @@
 				"Release_2024_09_1",
 				"Release_2024_09_2",
 				"Release_2024_09_3",
-				"Release_2024_09_4"
+				"Release_2024_09_4",
+				"Release_2024_09_5"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

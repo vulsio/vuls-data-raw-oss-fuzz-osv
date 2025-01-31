@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-838",
-	"modified": "2024-12-20T14:29:03.959233Z",
+	"modified": "2025-01-31T14:29:13.843327Z",
 	"published": "2024-08-16T00:03:32.029853Z",
 	"summary": "Bad-cast to RDKit::AtomRDKit::ROMol::initFromOther",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68998\n\n```\nCrash type: Bad-cast\nCrash state:\nBad-cast to RDKit::AtomRDKit::ROMol::initFromOther\nRDKit::ROMol::ROMol\nRDKit::RecursiveStructureQuery::copy\n```\n",
@@ -58,7 +58,8 @@
 				"Release_2024_09_1",
 				"Release_2024_09_2",
 				"Release_2024_09_3",
-				"Release_2024_09_4"
+				"Release_2024_09_4",
+				"Release_2024_09_5"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
