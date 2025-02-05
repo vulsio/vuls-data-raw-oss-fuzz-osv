@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-381",
-	"modified": "2024-10-03T15:07:45.055066Z",
+	"modified": "2025-02-05T15:17:14.234678Z",
 	"published": "2024-04-30T00:12:14.936195Z",
 	"summary": "Heap-buffer-overflow in H5F__accum_free",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67852\n\n```\nCrash type: Heap-buffer-overflow READ {*}\nCrash state:\nH5F__accum_free\nH5MF_xfree\nH5MF_free_aggrs\n```\n",
@@ -51,7 +51,8 @@
 				"snapshot-1.12",
 				"snapshot-1.14",
 				"hdf5_1.14.5",
-				"snapshot-1.16"
+				"snapshot-1.16",
+				"hdf5-1.14.6"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
