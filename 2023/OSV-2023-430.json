@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-430",
-	"modified": "2024-10-03T14:43:25.320799Z",
+	"modified": "2025-02-06T14:36:57.648144Z",
 	"published": "2023-05-26T14:00:26.078002Z",
 	"summary": "Heap-buffer-overflow in H5MM_xstrdup",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59295\n\n```\nCrash type: Heap-buffer-overflow READ 5\nCrash state:\nH5MM_xstrdup\nH5G__ent_to_link\nH5G__stab_lookup_cb\n```\n",
@@ -53,7 +53,12 @@
 				"temp-1.14.4-3",
 				"hdf5_1.14.4.3",
 				"hdf5_1.14.5",
-				"snapshot-1.16"
+				"snapshot-1.16",
+				"hdf5-1.14.5",
+				"hdf5-1.14.6",
+				"hdf5_1.14.6",
+				"hdff5-1_14-_0",
+				"hdff5-1_14_0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

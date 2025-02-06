@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-380",
-	"modified": "2024-10-03T15:53:47.826981Z",
+	"modified": "2025-02-06T14:40:09.413505Z",
 	"published": "2024-04-30T00:12:11.366893Z",
 	"summary": "Heap-use-after-free in H5FL__blk_gc_list",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67830\n\n```\nCrash type: Heap-use-after-free READ 8\nCrash state:\nH5FL__blk_gc_list\nH5FL_blk_free\nH5O__free\n```\n",
@@ -51,7 +51,12 @@
 				"snapshot-1.12",
 				"snapshot-1.14",
 				"hdf5_1.14.5",
-				"snapshot-1.16"
+				"snapshot-1.16",
+				"hdf5-1.14.5",
+				"hdf5-1.14.6",
+				"hdf5_1.14.6",
+				"hdff5-1_14-_0",
+				"hdff5-1_14_0"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"

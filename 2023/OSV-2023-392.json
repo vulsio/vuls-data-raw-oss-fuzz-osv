@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-392",
-	"modified": "2024-10-03T14:44:07.709246Z",
+	"modified": "2025-02-06T14:34:01.862062Z",
 	"published": "2023-05-13T14:00:26.093088Z",
 	"summary": "Negative-size-param in H5MM_memcpy",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58892\n\n```\nCrash type: Negative-size-param\nCrash state:\nH5MM_memcpy\nH5O__link_decode\nH5O__msg_iterate_real\n```\n",
@@ -53,7 +53,12 @@
 				"temp-1.14.4-3",
 				"hdf5_1.14.4.3",
 				"hdf5_1.14.5",
-				"snapshot-1.16"
+				"snapshot-1.16",
+				"hdf5-1.14.5",
+				"hdf5-1.14.6",
+				"hdf5_1.14.6",
+				"hdff5-1_14-_0",
+				"hdff5-1_14_0"
 			],
 			"ecosystem_specific": {
 				"severity": null
