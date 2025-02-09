@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-795",
-	"modified": "2024-05-04T14:10:25.999576Z",
+	"modified": "2025-02-09T14:20:03.310561Z",
 	"published": "2022-08-28T00:00:11.408403Z",
 	"summary": "UNKNOWN READ in pcl::PLYReader::read",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50663\n\n```\nCrash type: UNKNOWN READ\nCrash state:\npcl::PLYReader::read\nply_io.h\n```\n",
@@ -31,7 +31,8 @@
 				"pcl-1.14.0-rc1",
 				"pcl-1.14.0",
 				"pcl-1.14.1-rc1",
-				"pcl-1.14.1"
+				"pcl-1.14.1",
+				"pcl-1.15.0-rc1"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
