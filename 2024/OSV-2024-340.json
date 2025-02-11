@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-340",
-	"modified": "2024-07-08T14:18:27.414920Z",
+	"modified": "2025-02-11T14:21:20.901773Z",
 	"published": "2024-04-30T00:01:53.406015Z",
 	"summary": "Heap-buffer-overflow in Exiv2::AsfVideo::GUIDTag::GUIDTag",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68210\n\n```\nCrash type: Heap-buffer-overflow READ 8\nCrash state:\nExiv2::AsfVideo::GUIDTag::GUIDTag\nExiv2::AsfVideo::streamProperties\nExiv2::AsfVideo::decodeBlock\n```\n",
@@ -29,7 +29,8 @@
 				"v0.28.0",
 				"v0.28.1",
 				"v0.28.2",
-				"v0.28.3"
+				"v0.28.3",
+				"v0.28.4"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
