@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-1672",
-	"modified": "2024-11-28T14:12:44.146501Z",
+	"modified": "2025-02-12T14:25:33.673204Z",
 	"published": "2021-12-12T00:01:29.747137Z",
 	"summary": "Heap-buffer-overflow in blosc_d",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42210\n\n```\nCrash type: Heap-buffer-overflow READ 4\nCrash state:\nblosc_d\ndo_job\nblosc_run_decompression_with_context\n```\n",
@@ -71,7 +71,8 @@
 				"v2.14.4",
 				"v2.15.0",
 				"v2.15.1",
-				"v2.15.2"
+				"v2.15.2",
+				"v2.16.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

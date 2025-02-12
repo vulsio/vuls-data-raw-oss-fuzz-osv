@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1218",
-	"modified": "2024-10-14T00:08:40.383090Z",
+	"modified": "2025-02-12T14:38:06.605071Z",
 	"published": "2024-10-14T00:08:40.382545Z",
 	"summary": "UNKNOWN READ in Poco::UTF16Encoding::queryConvert",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372765426\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nPoco::UTF16Encoding::queryConvert\nPoco::TextConverter::convert\nPoco::Net::NTLMCredentials::parseChallengeMessage\n```\n",
@@ -24,7 +24,8 @@
 				}
 			],
 			"versions": [
-				"poco-1.14.0-release"
+				"poco-1.14.0-release",
+				"poco-1.14.1-release"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

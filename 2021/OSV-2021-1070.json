@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-1070",
-	"modified": "2025-01-10T05:16:05.249825Z",
+	"modified": "2025-02-12T14:25:13.757142Z",
 	"published": "2021-07-29T00:01:10.187569Z",
 	"summary": "Heap-buffer-overflow in ZSTD_decompressBlock_internal",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36623\n\n```\nCrash type: Heap-buffer-overflow READ 4\nCrash state:\nZSTD_decompressBlock_internal\nZSTD_decompressMultiFrame\nZSTD_decompressDCtx\n```\n",
@@ -71,7 +71,8 @@
 				"v2.14.4",
 				"v2.15.0",
 				"v2.15.1",
-				"v2.15.2"
+				"v2.15.2",
+				"v2.16.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

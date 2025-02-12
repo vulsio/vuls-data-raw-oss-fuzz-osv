@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2024-1272",
-	"modified": "2024-11-05T00:03:30.788401Z",
+	"modified": "2025-02-12T14:38:22.062009Z",
 	"published": "2024-11-05T00:03:30.787980Z",
 	"summary": "Segv on unknown address in std::__1::ios_base::~ios_base",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=371292576\n\n```\nCrash type: Segv on unknown address\nCrash state:\nstd::__1::ios_base::~ios_base\nPoco::Net::MultipartReader::nextPart\nPoco::Net::MailMessage::readMultipart\n```\n",
@@ -24,7 +24,8 @@
 				}
 			],
 			"versions": [
-				"poco-1.14.0-release"
+				"poco-1.14.0-release",
+				"poco-1.14.1-release"
 			],
 			"ecosystem_specific": {
 				"severity": null

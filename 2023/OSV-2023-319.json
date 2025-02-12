@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2023-319",
-	"modified": "2024-11-28T14:18:26.803353Z",
+	"modified": "2025-02-12T14:31:21.118581Z",
 	"published": "2023-04-16T14:01:58.406534Z",
 	"summary": "Heap-buffer-overflow in ZSTD_decompressSequencesLong_bmi2",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58035\n\n```\nCrash type: Heap-buffer-overflow READ 8\nCrash state:\nZSTD_decompressSequencesLong_bmi2\nZSTD_decompressSequencesLong\nZSTD_decompressBlock_internal\n```\n",
@@ -71,7 +71,8 @@
 				"v2.14.4",
 				"v2.15.0",
 				"v2.15.1",
-				"v2.15.2"
+				"v2.15.2",
+				"v2.16.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
