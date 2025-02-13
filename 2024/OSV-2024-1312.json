@@ -1,0 +1,44 @@
+{
+	"schema_version": "1.6.0",
+	"id": "OSV-2024-1312",
+	"modified": "2024-11-15T00:16:08.929283Z",
+	"published": "2024-11-15T00:16:08.928897Z",
+	"summary": "Heap-buffer-overflow in jv_string_vfmt",
+	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=378836890\n\n```\nCrash type: Heap-buffer-overflow READ 13\nCrash state:\njv_string_vfmt\njv_string_fmt\njv_parse_sized_custom_flags\n```\n",
+	"affected": [
+		{
+			"package": {
+				"ecosystem": "OSS-Fuzz",
+				"name": "jq",
+				"purl": "pkg:generic/jq"
+			},
+			"ranges": [
+				{
+					"type": "GIT",
+					"repo": "https://github.com/jqlang/jq",
+					"events": [
+						{
+							"introduced": "13353515bd3aedf84c6e6ebfb726563ae84db778"
+						}
+					]
+				}
+			],
+			"versions": [
+				"jq-1.7.1"
+			],
+			"ecosystem_specific": {
+				"severity": "MEDIUM"
+			},
+			"database_specific": {
+				"introduced_range": "98a206964d59143c6ed9189b91cdb34af1ae5071:bfb7fd570f521ef832fe1c3bca0e05abd398284c",
+				"source": "https://github.com/google/oss-fuzz-vulns/blob/main/vulns/jq/OSV-2024-1312.yaml"
+			}
+		}
+	],
+	"references": [
+		{
+			"type": "REPORT",
+			"url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=378836890"
+		}
+	]
+}
