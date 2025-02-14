@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-525",
-	"modified": "2025-02-08T14:22:40.878617Z",
+	"modified": "2025-02-14T14:08:58.212412Z",
 	"published": "2021-03-16T00:00:19.176877Z",
 	"summary": "Use-of-uninitialized-value in void edge_filtering_chroma_internal<unsigned char>",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32059\n\n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nvoid edge_filtering_chroma_internal<unsigned char>\nedge_filtering_chroma\nthread_task_deblock_CTBRow::work\n```\n",
@@ -122,7 +122,8 @@
 				"v6.9.0",
 				"v6.10.0",
 				"v6.10.0-rc1",
-				"v6.11.0-rc1"
+				"v6.11.0-rc1",
+				"v6.11.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

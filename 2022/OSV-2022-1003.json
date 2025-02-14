@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1003",
-	"modified": "2025-02-08T14:20:53.269455Z",
+	"modified": "2025-02-14T14:09:05.591917Z",
 	"published": "2022-09-30T00:02:10.026151Z",
 	"summary": "Index-out-of-bounds in LibRaw::ahd_interpolate_r_and_b_in_rgb_and_convert_to_cielab",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51965\n\n```\nCrash type: Index-out-of-bounds\nCrash state:\nLibRaw::ahd_interpolate_r_and_b_in_rgb_and_convert_to_cielab\nLibRaw::ahd_interpolate\nLibRaw::dcraw_process\n```\n",
@@ -83,7 +83,8 @@
 				"v6.9.0",
 				"v6.10.0",
 				"v6.10.0-rc1",
-				"v6.11.0-rc1"
+				"v6.11.0-rc1",
+				"v6.11.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

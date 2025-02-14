@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-948",
-	"modified": "2025-02-08T14:20:47.136293Z",
+	"modified": "2025-02-14T14:09:02.254097Z",
 	"published": "2021-07-10T00:01:12.890029Z",
 	"summary": "Use-of-uninitialized-value in residual_coding",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35950\n\n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nresidual_coding\nread_transform_unit\nread_transform_tree\n```\n",
@@ -120,7 +120,8 @@
 				"v6.9.0",
 				"v6.10.0",
 				"v6.10.0-rc1",
-				"v6.11.0-rc1"
+				"v6.11.0-rc1",
+				"v6.11.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"

@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-972",
-	"modified": "2025-02-08T14:20:49.354401Z",
+	"modified": "2025-02-14T14:09:04.215887Z",
 	"published": "2021-07-13T00:00:16.631711Z",
 	"summary": "UNKNOWN READ in void mc_chroma<unsigned short>",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056\n\n```\nCrash type: UNKNOWN READ\nCrash state:\nvoid mc_chroma<unsigned short>\ngenerate_inter_prediction_samples\ndecode_prediction_unit\n```\n",
@@ -120,7 +120,8 @@
 				"v6.9.0",
 				"v6.10.0-rc1",
 				"v6.10.0",
-				"v6.11.0-rc1"
+				"v6.11.0-rc1",
+				"v6.11.0"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
