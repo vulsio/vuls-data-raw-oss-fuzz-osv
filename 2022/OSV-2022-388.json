@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-388",
-	"modified": "2024-12-24T14:09:15.258187Z",
+	"modified": "2025-02-15T14:25:51.879189Z",
 	"published": "2022-05-01T00:01:54.904711Z",
 	"summary": "Segv on unknown address in dwg_ref_get_object",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47151\n\n```\nCrash type: Segv on unknown address\nCrash state:\ndwg_ref_get_object\ndwg_geojson_feature\ndwg_geojson_object\n```\n",
@@ -594,7 +594,9 @@
 				"0.13.3.7414",
 				"0.13.3.7420",
 				"0.13.3.7424",
-				"0.13.3.7426"
+				"0.13.3.7426",
+				"0.13.3.7429",
+				"0.13.3.7431"
 			],
 			"ecosystem_specific": {
 				"severity": null

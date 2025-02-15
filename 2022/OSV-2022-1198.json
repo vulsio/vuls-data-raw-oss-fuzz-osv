@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2022-1198",
-	"modified": "2024-12-24T14:08:25.823646Z",
+	"modified": "2025-02-15T14:29:42.255505Z",
 	"published": "2022-11-23T13:02:06.623044Z",
 	"summary": "Heap-buffer-overflow in dwg_json_LTYPE",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53617\n\n```\nCrash type: Heap-buffer-overflow READ 8\nCrash state:\ndwg_json_LTYPE\njson_objects_write\ndwg_write_json\n```\n",
@@ -571,7 +571,9 @@
 				"0.13.3.7414",
 				"0.13.3.7420",
 				"0.13.3.7424",
-				"0.13.3.7426"
+				"0.13.3.7426",
+				"0.13.3.7429",
+				"0.13.3.7431"
 			],
 			"ecosystem_specific": {
 				"severity": "MEDIUM"
