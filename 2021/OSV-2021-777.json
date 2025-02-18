@@ -1,7 +1,7 @@
 {
 	"schema_version": "1.6.0",
 	"id": "OSV-2021-777",
-	"modified": "2024-11-13T14:11:06.185874Z",
+	"modified": "2025-02-18T14:08:58.548268Z",
 	"published": "2021-05-20T00:00:30.166614Z",
 	"summary": "Heap-use-after-free in xmlAddNextSibling",
 	"details": "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461\n\n```\nCrash type: Heap-use-after-free READ 4\nCrash state:\nxmlAddNextSibling\nxmlXIncludeCopyRange\nxmlXIncludeCopyXPointer\n```\n",
@@ -59,7 +59,8 @@
 				"v2.11.9",
 				"v2.12.9",
 				"v2.13.4",
-				"v2.13.5"
+				"v2.13.5",
+				"v2.13.6"
 			],
 			"ecosystem_specific": {
 				"severity": "HIGH"
